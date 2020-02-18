@@ -1,0 +1,17 @@
+--- 
+management.endpoints.web.exposure.include: "*"
+server: 
+  port: 8084
+spring: 
+  application: 
+    name: Micro-Service-Demo
+  cloud:
+    config:
+      uri: http://localhost:8888
+  profiles:
+    active: test2,test
+test: 
+  count: 100
+  list: "nikhil,sachin,joseph"
+  map: "{name:'Nikhil',age:'26',id:'2013699999'}"
+  value: hello

@@ -1,0 +1,9 @@
+--- 
+management.endpoints.web.exposure.include: "*"
+server: 
+  port: 8084
+test: 
+  count1: 150
+  list: "nikhil,sachin,joseph,priyanga"
+  map: "{name:'sachin',age:'22',id:'2013699999'}"
+  value: hello test profile 2
